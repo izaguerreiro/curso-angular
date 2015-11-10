@@ -7,15 +7,9 @@ angular.module('minhasDiretivas', [])
 		titulo: '@',
 	};
 
-	ddo.template = 
-			'<div class="panel panel-default">'
-		+	'	<div class="panel-heading">'
-        +	'		<h3 class="panel-title">{{foto.titulo}}</h3>'
-        +	'	</div>'
+	ddo.transclude = true;
 
-        +   '   <div class="panel-body">'
-        +   '   </div>'
-        +   '</div>'
+	ddo.templateUrl = 'js/directives/meu-painel.html'
 
 	return ddo;
 });
